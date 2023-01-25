@@ -7,7 +7,6 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  overflow-x: hidden;
 }
 
 .header {
@@ -20,6 +19,7 @@
   display: flex;
   align-items: center;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -31,26 +31,32 @@
   position: absolute;
   z-index: 2;
   top: 30px;
+  left: auto;
   background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title {
   display: flex;
   z-index: 2;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
 .header__subtitle {
   position: absolute;
   z-index: 2;
   bottom: 30px;
-  width: 388px;
+  left: auto;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
@@ -94,16 +100,21 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 }
 
 .two-columns__span-accent {
@@ -118,6 +129,8 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .digits {
@@ -125,7 +138,6 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 100px;
-  padding-top: 100px;
 }
 
 .section-title {
@@ -137,6 +149,7 @@
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -148,6 +161,7 @@
   font-weight: normal;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 
 .table {
@@ -157,6 +171,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 0;
 }
 
 .table__cell {
@@ -190,14 +205,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 890px;
+  min-height: 890px;
   padding: 100px 0 0 0;
   position: relative;
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -229,10 +245,12 @@
 }
 
 .feynman__img {
+  background: url(../images/feynman.png) no-repeat;
   height: 637px;
   width: 867px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
+  left: 0;
 }
 
 .kaufman {
@@ -347,7 +365,7 @@
   text-decoration: none;
 }
 
-.footer__column-icon {
+.footer__social-icon {
   height: 16px;
   width: 16px;
   margin: 0 10px 0 0;
