@@ -31,7 +31,7 @@
   position: absolute;
   z-index: 2;
   top: 30px;
-  left: auto;
+  left: 64px;
   background-image: url(../images/logo_place_header.svg);
 }
 
@@ -50,7 +50,7 @@
   position: absolute;
   z-index: 2;
   bottom: 30px;
-  left: auto;
+  left: 64px;
   max-width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -73,6 +73,7 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+  object-fit: fill;
 }
 
 .header__square-pic {
@@ -208,8 +209,9 @@
   min-height: 890px;
   padding: 100px 0 0 0;
   position: relative;
-  background-color: #f2f2f2;
   box-sizing: border-box;
+  background: url(../images/feynman.png) bottom left no-repeat #f2f2f2;
+  background-size: 867px 637px;
 }
 
 .feynman__title {
@@ -242,15 +244,6 @@
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
-}
-
-.feynman__img {
-  background: url(../images/feynman.png) no-repeat;
-  height: 637px;
-  width: 867px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .kaufman {
@@ -341,6 +334,7 @@
 
 .footer__column-heading {
   margin-bottom: 20px;
+  margin-top: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
