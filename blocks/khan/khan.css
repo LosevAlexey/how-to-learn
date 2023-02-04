@@ -1,0 +1,10 @@
+.khan {
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f2f2f2;
+  width: 80%;
+}
